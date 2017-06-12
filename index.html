@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>小鸟飞</title>
+</head>
+<body>
+	<!--<canvas id='cv'></canvas>-->
+	<div id="cv"></div>
+	
+	
+	<script src='./js/fly.js'></script>
+	<script src='./js/bird.js'></script>
+	<script src='./js/sky.js'></script>
+	<script src='./js/land.js'></script>
+	<script src='./js/pipe.js'></script>
+	<script src='./js/game.js'></script>
+	
+	<script>
+/*		var cv = document.getElementById('cv');
+		var context = cv.getContext('2d');
+		cv.style.border = '1px solid red';
+		cv.width = 800;
+		cv.height = 600;*/
+    
+		var game = new Fly.Game({
+		  id: 'cv'
+		});
+  	game.start();
+		
+	</script>
+
+</body>
+</html>
